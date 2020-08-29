@@ -58,6 +58,14 @@ body {
     width: 50px;
     border-radius: 50px ;
 }
+.share {
+    background-color: hsl(212, 23%, 69%) ;
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+
+}
+
 .details {
     margin-left: 1rem;
 }
