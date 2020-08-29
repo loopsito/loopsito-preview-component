@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: 'Manrope' ;
+}
+
+body {
+    background-color: pink;
+}
+
+.container {
+    border-radius: 5px;
+    width: 700px;
+    height: 250px;
+    margin: auto;
+    margin-top: 3rem;
+    background-color: hsl(210, 46%, 95%);
+    display: flex;
+}
+
+.component__figure--img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+}
+
+.component__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: left;
+    padding: 1.5rem;
+}
+
+.component__title {
+    font-family: 'Manrope';
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: .5rem;
+}
+
+.component__info {
+    font-family: 'Manrope';
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.component__footer {
+    display: flex;
+    justify-content: space-between;
+}
+.component__datails {
+    display: flex;
+}
+
+.userpic {
+    width: 50px;
+    border-radius: 50px ;
+}
+.details {
+    margin-left: 1rem;
+}
+
+
