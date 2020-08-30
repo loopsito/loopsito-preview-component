@@ -2,7 +2,8 @@
     margin: 0;
     padding: 0;
     font-size: 16px;
-    font-family: 'Manrope' ;
+    font-family: 'Manrope';
+    letter-spacing: 1px;
 }
 
 body {
@@ -15,11 +16,14 @@ body {
     height: 250px;
     margin: auto;
     margin-top: 3rem;
-    background-color: hsl(210, 46%, 95%);
+    margin-bottom: 1rem;
+    background-color: white;
     display: flex;
 }
 
 .component__figure--img {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
     width: 250px;
     height: 250px;
     object-fit: cover;
@@ -30,14 +34,15 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: left;
-    padding: 1.5rem;
+    padding: 2rem;
 }
 
 .component__title {
     font-family: 'Manrope';
     font-size: 20px;
-    font-weight: 700;
+    font-weight: bold;
     margin-bottom: .5rem;
+    color:  hsl(217, 19%, 35%);
 }
 
 .component__info {
@@ -47,6 +52,7 @@ body {
 }
 
 .component__footer {
+    margin-top: 1rem;
     display: flex;
     justify-content: space-between;
 }
@@ -55,19 +61,54 @@ body {
 }
 
 .userpic {
-    width: 50px;
+    width: 40px;
     border-radius: 50px ;
-}
-.share {
-    background-color: hsl(212, 23%, 69%) ;
-    width: 30px;
-    height: 30px;
-    border-radius: 50px;
-
 }
 
 .details {
     margin-left: 1rem;
 }
 
+.details__name, .details__date {
+    font-size: 13px;
+    font-family: 'Manrope';
+    font-weight: 700;
+}
+.details__date {
+    font-weight: 400;
+}
+
+.share__img {
+    background: hsl(210, 46%, 95%);
+    padding: .5rem;
+    border-radius: 50px;
+}
+
+@media (max-width: 769px) {
+    .container {
+        width: 300px;
+        height: 450px;
+        flex-direction: column;
+    }
+
+    .component__figure--img {
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        border-bottom-left-radius: 0;
+        width: 300px;
+        height: 190px;
+        object-fit: cover;
+    }
+
+    .component__text {
+        padding: 2rem;
+        padding-top: 1rem;
+    }
+    .component__title {
+        font-size: 13px;
+    }
+    .component__footer {
+        margin-top: 2rem;
+    }
+}
 
