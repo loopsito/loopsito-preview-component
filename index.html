@@ -17,9 +17,11 @@
 </head>
 <body>
   <div class="container">
+    <!-- image -->
     <figure class="component__figure">
       <img class="component__figure--img" src="./images/drawers.jpg" alt="">
     </figure>
+    <!-- text -->
     <div class="component__text">
       <div class="text-container">
         <h3 class="component__title">
@@ -42,9 +44,22 @@
             <p class="details__date">28 Jun 2020</p>
           </div>
         </div>
-        <a href="/" class="share">
-          <img class="share__img" src="./images/icon-share.svg" alt="">
-        </a>
+        <div >
+          <a href="#" class="share__icon" onclick="activateBar()">
+            <img class="share__img" src="./images/icon-share.svg" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- share active -->
+    <div class="share" id="share">
+      <p>Share</p>
+      <div class="social">
+        <a class="fb" href="#"><img src="./images/icon-facebook.svg" alt=""></a>
+        <a class="tw" href="#"><img src="./images/icon-twitter.svg" alt=""></a>
+        <a class="pt" href="#"><img src="./images/icon-pinterest.svg" alt=""></a>
+      </div>
+      <div class="triangle">
       </div>
     </div>
   </div>

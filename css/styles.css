@@ -51,6 +51,31 @@ body {
     font-weight: 400;
 }
 
+.share {
+    background-color:hsl(217, 19%, 35%);
+    display: flex;
+    border-radius: 5px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    padding: .6rem 0;
+    position: absolute;
+    bottom: 55%;
+    left: 68%;
+    width: 236px;
+
+}
+.share p {
+    letter-spacing: 4px;
+    color: white;
+    font-size: 13px;
+    justify-self: flex-start;
+    text-transform: uppercase;
+    margin-right: 1rem;
+}
+.share a {
+    margin: 0 .3rem;
+}
 .component__footer {
     margin-top: 1rem;
     display: flex;
@@ -77,14 +102,24 @@ body {
 .details__date {
     font-weight: 400;
 }
-
 .share__img {
     background: hsl(210, 46%, 95%);
     padding: .5rem;
     border-radius: 50px;
 }
 
-@media (max-width: 769px) {
+.triangle {
+    display: block;
+    clip-path: polygon(49% 45%, 0 0, 100% 0);
+    background-color:hsl(217, 19%, 35%);;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    bottom: -29px;
+    left: 45%;
+}
+
+@media screen and (max-width: 769px) {
     .container {
         width: 300px;
         height: 450px;
@@ -97,7 +132,6 @@ body {
         border-bottom-left-radius: 0;
         width: 300px;
         height: 190px;
-        object-fit: cover;
     }
 
     .component__text {
@@ -110,5 +144,37 @@ body {
     .component__footer {
         margin-top: 2rem;
     }
+    .share__img {
+        position: relative;
+        z-index: 20;
+    }
+    .share.active {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        position: relative;
+        background-color: hsl(217, 19%, 35%);
+        bottom: 95px;
+        padding: 1.5rem 2rem;
+        border-top-right-radius: 0;
+        border-top-left-radius: 0;
+        border-bottom-right-radius: 5px;
+        border-bottom-left-radius: 5px;
+    }
+    .share p {
+        letter-spacing: 4px;
+        color: white;
+        font-size: 13px;
+        justify-self: flex-start;
+        text-transform: uppercase;
+        margin-right: 1rem;
+    }
+    .share a {
+        margin: 0 .3rem;
+    }
+    .triangle {
+        display: none;
+    }
+    
 }
 
